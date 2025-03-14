@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    alert(Javascript Running)
+    alert("Javascript Running");
     // const target_main = document.querySelectorAll('.main');
     // const target_topmenu = document.querySelector('.topmenu');
     // const target_infobar = document.querySelector('.infobar');
