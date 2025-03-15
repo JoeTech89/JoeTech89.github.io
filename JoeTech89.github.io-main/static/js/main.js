@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    alert(Javascript Running)
+    //alert(Javascript Running)
     const div_inject =document.getElementById('div-inject');
-    div_inject.innerHTML = '<p> Injected Text </p>';
+    if (div_inject){
+        div_inject.innerHTML = '<p> Injected Text </p>';    
+    } else {
+        console.error(" Element 'div-inject' not found")
+    }
+    
     // const target_main = document.querySelectorAll('.main');
     // const target_topmenu = document.querySelector('.topmenu');
     // const target_infobar = document.querySelector('.infobar');
