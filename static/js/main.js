@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const div_inject=document.getElementById('div-inject');
     if (div_inject){
         div_inject.innerHTML='<p>Injected HTML</p>';
-    } else {console.error("Element id:'div-inject' not found"};
+    } else {console.error("Element id:'div-inject' not found")};
     // const target_main = document.querySelectorAll('.main');
     // const target_topmenu = document.querySelector('.topmenu');
     // const target_infobar = document.querySelector('.infobar');
