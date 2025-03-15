@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     alert(Javascript Running)
+    const div_inject =document.getElementById('div-inject');
+    div_inject.innerHTML = '<p> Injected Text </p>;
     // const target_main = document.querySelectorAll('.main');
     // const target_topmenu = document.querySelector('.topmenu');
     // const target_infobar = document.querySelector('.infobar');
