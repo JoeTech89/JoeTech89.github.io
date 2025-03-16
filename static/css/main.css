@@ -1,0 +1,67 @@
+:root{
+	--pad_button: 10px;
+	--marg_left: 10px;
+}
+
+.menubar{
+	display: grid;
+	grid-template-columns: minmax(px,auto) 1fr minmax(px, auto);
+}
+div.main{
+	margin: 0;
+	position: static;
+	display: grid;
+	grid-template-columns: minmax(px, auto) 1fr;
+	grid-template-rows:100vh 100vh;
+}
+.sidemenu{
+	grid-row-start: 1;
+	grid-column-start: 1;
+	overflow: scroll;
+	background-color: aqua;
+	resize: horizontal;
+}
+.content{
+	grid-row-start: 1;
+	grid-column-start: 2;
+	overflow: scroll;
+
+}
+.lower{
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	display: grid;
+	grid-template-columns: min-content 100vh min-content;
+	background-color: grey;
+	height: 100vh;
+	overflow: scroll;
+}
+/*Button-Dropdown*/
+.dropbutton{
+	display: inline-block;
+	background-color: black;
+	color: white;
+	padding: var(--pad_button);
+	font-size: var(--pad_button);
+	border: none;
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: darkgrey;
+	min-width: 200px;
+	z-index: 1;
+}
+.dropdown-content details a{
+	margin-left: var(--marg_left);
+}
+
+/*.dropbutton:active .dropdown-content{display: block;}*/
+.dropdown:hover .dropdown-content{display: block;}
+.dropbutton:hover{
+	background-color: beige;color: black;}
